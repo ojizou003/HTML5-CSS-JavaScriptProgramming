@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function init(){
+      let a =3,b=3,c=5;
+      let x = (a ==b); //x=true
+      let y = (a != b); //y=false
+      let z = (a < b); //z=false
+      let p =(a>b);//p=false
+      let q =(a<=b); //q=true
+      let r =(a>=b); //r=true
+      let str = "x="+x+",y=" +y+ ",z=" +z;
+      document.getElementById("info").textContent=str;
+      console.log(str);
+    }
+  </script>
+</head>
+<body onload="init()">
+  <p id="info"></p>
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function sum(){
+      let v = document.getElementById("number").value;
+      let r = 0;
+      for(let i=1;i<=v;i++){
+        r+=i;
+      }
+      let s = "1から" +v+ "の合計は" +r+ "です";
+      document.getElementById("result").textContent =s;
+    }
+  </script>
+</head>
+<body>
+  <input id="number">
+  <button onclick="sum()">合計</button>
+  <p id="result"></p>
+  
+</body>
+</html>

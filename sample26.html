@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    let ctx;
+    function init(){
+      let canvas = document.getElementById("canvas");
+      ctx = canvas.getContext("2d");
+      ctx.font="32px 'MSゴシック'";
+
+      ctx.strokeStyle="blue";
+      ctx.strokeText("strokeTextによる文字",10,50);
+
+      ctx.fillStyle="green";
+      ctx.fillText("fillTextによる文字",10,100);
+
+      ctx.fillStyle="red";
+      ctx.fillText("ABCDEFGHIJKLMNOPQRSTUVWXYZ",10,150,200);
+    }
+  </script>
+</head>
+<body onload="init()">
+  <canvas id="canvas" width="600" height="400"></canvas>
+  
+</body>
+</html>
